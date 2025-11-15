@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Mini Spotify</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-container { max-width: 1100px; margin: 36px auto; padding: 20px; }
+    .about-hero { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+    .about-hero .title { flex:1 1 320px; }
+    .about-hero h1 { margin:0 0 8px; font-size:1.8rem; }
+    .about-hero p.lead { margin:0; color:#555; }
+    .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:20px 0; }
+    .feature-card { border:1px solid #e6e6e6; padding:12px; border-radius:8px; background:#ffffff; }
+    .tech-list { display:flex; flex-wrap:wrap; gap:10px; margin:10px 0; }
+    .tech-pill { padding:6px 10px; background:#f3f3f3; border-radius:16px; font-size:.9rem; }
+    .screenshot-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .screenshot-row img { width:260px; max-width:100%; border-radius:8px; border:1px solid #ddd; }
+    .cta-row { margin-top:16px; display:flex; gap:10px; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:8px 12px; border-radius:8px; text-decoration:none; color:#fff; background:#1db954; }
+    .btn.secondary { background:#6c757d; }
+    pre.run { background:#0f1720; color:#e6e6e6; padding:12px; border-radius:6px; overflow:auto; }
+    .meta { color:#666; font-size:.9rem; margin-top:8px; }
+    @media (max-width:520px){ .about-hero{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <main class="about-container">
+    <section class="about-hero">
+      <div class="title">
+        <h1 >Mini Spotify <span style="color:green"> — local demo</span></h1>
+        <p class="lead">A lightweight demo to explore playlist creation, recommendations, 
+            and simple track management using local data. Built as a small front-end project for learning and portfolio use.</p>
+        <div class="meta">Version: 1.0 — Last updated: 2025-11-15</div>
+        <div class="cta-row">
+          <a class="btn" href="index.html">Open Demo</a>
+          <a class="btn secondary" href="https://github.com/ShreyaliDongre/mini-spotify" target="_blank" rel="noopener">View Source</a>
+        </div>
+      </div>
+      <div style="min-width:220px">
+        <div style="background:#fafafa;padding:12px;border-radius:10px;border:1px solid #eee;">
+          <strong style="color:green">What you'll find:</strong>
+          <ul style="margin:8px 0 0 18px;padding:0;color:#444">
+            <li>Playlists & recommendations</li>
+            <li>Add/manage songs locally</li>
+            <li>Static JSON-backed demo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card" ><strong style="color:green">Playlist management</strong><div style="color:green">Create, edit and view playlists stored in `data.json`.</div></div>
+        <div class="feature-card"><strong style="color:green">Recommendations</strong><div style="color:green">Simple curated recommendations page and logic.</div></div>
+        <div class="feature-card"><strong style="color:green">Add tracks</strong><div style="color:green">Form to add new songs (saved to local JSON during demo).</div></div>
+        <div class="feature-card"><strong style="color:green">Responsive UI</strong><div style="color:green">Works on desktop and mobile with a lightweight layout.</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technologies</h2>
+      <div class="tech-list">
+        <span class="tech-pill" style="background-color: green">HTML</span>
+        <span class="tech-pill" style="background-color: green">CSS</span>
+        <span class="tech-pill" style="background-color: green">JavaScript</span>
+        <span class="tech-pill" style="background-color: green">Local JSON (`data.json`)</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Run locally</h2>
+      <p>Open the demo in your browser or run a tiny static server if you run into file issues:</p>
+      <pre class="run"># Option 1 (quick): double-click `index.html` to open in your browser
+# Option 2 (recommended): run a static server
+npx http-server . -p 8080
+# or (if Python installed)
+python -m http.server 8000
+# then open: http://localhost:8080/index.html
+</pre>
+    </section>
+
+    <section>
+      <h2>Screenshots:</h2>
+      <div class="screenshot-row">
+        <img src="index.png" alt="Index page screenshot" />
+        <img src="playlist.png" alt="Playlist page screenshot " />
+        <img src="recmd.png" alt="Recommended page screenshot " />
+        <img src="add.png" alt="Add page screenshot " />
+
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h3>Author</h3>
+      <p>Built by <a href="https://github.com/ShreyaliDongre" target="_blank" rel="noopener">ShreyaliDongre</a>.
+    </section>
+
+    <footer style="margin-top:28px;color:#777;font-size:.95rem">
+      <div>Questions or feedback? <a href="mailto:shreyali.d.10@gmail.com">shreyali.d.10@gmail.com</a></div>
+    </footer>
+  </main>
+</body>
+</html>

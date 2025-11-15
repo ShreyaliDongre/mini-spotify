@@ -1,0 +1,139 @@
+{
+  "recommended": [
+    {
+      "id": 101,
+      "title": "Midnight Swim",
+      "artist": "Luna Waves",
+      "mood": "Calm",
+      "cover": "https://picsum.photos/seed/1/400",
+      "duration": "3:45",
+      "genre": "Ambient"
+    },
+    {
+      "id": 102,
+      "title": "Neon Run",
+      "artist": "Pulse City",
+      "mood": "Energetic",
+      "cover": "https://picsum.photos/seed/2/400",
+      "duration": "4:12",
+      "genre": "Electronic"
+    },
+    {
+      "id": 103,
+      "title": "Focus Mode",
+      "artist": "Study Beats",
+      "mood": "Focus",
+      "cover": "https://picsum.photos/seed/3/400",
+      "duration": "5:30",
+      "genre": "Lo-Fi"
+    },
+    {
+      "id": 104,
+      "title": "Velvet Night",
+      "artist": "Soft Strings",
+      "mood": "Romantic",
+      "cover": "https://picsum.photos/seed/4/400",
+      "duration": "3:20",
+      "genre": "Jazz"
+    },
+    {
+      "id": 105,
+      "title": "Sunset Dance",
+      "artist": "Party People",
+      "mood": "Party",
+      "cover": "https://picsum.photos/seed/5/400",
+      "duration": "4:05",
+      "genre": "Dance"
+    },
+    {
+      "id": 106,
+      "title": "Ocean Breeze",
+      "artist": "Coastal Vibes",
+      "mood": "Calm",
+      "cover": "https://picsum.photos/seed/6/400",
+      "duration": "4:18",
+      "genre": "Chill"
+    },
+    {
+      "id": 107,
+      "title": "Electric Pulse",
+      "artist": "Voltage",
+      "mood": "Energetic",
+      "cover": "https://picsum.photos/seed/7/400",
+      "duration": "3:55",
+      "genre": "EDM"
+    },
+    {
+      "id": 108,
+      "title": "Deep Concentration",
+      "artist": "Mindful Sounds",
+      "mood": "Focus",
+      "cover": "https://picsum.photos/seed/8/400",
+      "duration": "6:00",
+      "genre": "Instrumental"
+    },
+    {
+      "id": 109,
+      "title": "Moonlight Serenade",
+      "artist": "Jazz Collective",
+      "mood": "Romantic",
+      "cover": "https://picsum.photos/seed/9/400",
+      "duration": "4:30",
+      "genre": "Jazz"
+    },
+    {
+      "id": 110,
+      "title": "Festival Vibes",
+      "artist": "DJ Mix",
+      "mood": "Party",
+      "cover": "https://picsum.photos/seed/10/400",
+      "duration": "5:15",
+      "genre": "House"
+    }
+  ],
+  "moods": [
+    {
+      "name": "Calm",
+      "description": "Relaxing and peaceful tracks",
+      "color": "#06b6d4",
+      "icon": "🌊"
+    },
+    {
+      "name": "Energetic",
+      "description": "High-energy and upbeat songs",
+      "color": "#7c3aed",
+      "icon": "⚡"
+    },
+    {
+      "name": "Focus",
+      "description": "Music to help you concentrate",
+      "color": "#10b981",
+      "icon": "🎯"
+    },
+    {
+      "name": "Romantic",
+      "description": "Love songs and romantic melodies",
+      "color": "#ec4899",
+      "icon": "💕"
+    },
+    {
+      "name": "Party",
+      "description": "Dance and party tracks",
+      "color": "#f59e0b",
+      "icon": "🎉"
+    }
+  ],
+  "appInfo": {
+    "name": "Moodsound",
+    "version": "1.0",
+    "description": "A music mood application for organizing playlists by emotion",
+    "author": "Moodsound Team",
+    "features": [
+      "Mood-based organization",
+      "Playlist management",
+      "Song recommendations",
+      "Theme customization"
+    ]
+  }
+}
+

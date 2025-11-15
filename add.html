@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add Song — Moodsound</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+<div class="nav-brand">
+<span class="logo">🎵</span>
+<span class="brand-name">Moodsound</span>
+</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="playlist.html">Playlist</a>
+<a href="add.html" class="active">Add Song</a>
+<a href="recommended.html">Recommended</a>
+<a href="about.html">About</a>
+</div>
+<div class="nav-actions">
+<button id="themeToggle" class="theme-toggle" title="Toggle theme">
+<div class="theme-toggle-slider">
+<span class="theme-toggle-icon">🌙</span>
+</div>
+</button>
+</div>
+</nav>
+
+<main class="main-content">
+<header class="page-header">
+<h1 class="page-title">Add New Song</h1>
+<p class="page-subtitle">Add your favorite tracks to your playlist</p>
+</header>
+
+<div class="container">
+<div class="add-song-section">
+<button class="btn btn-primary" id="openModal">+ Add New Song</button>
+</div>
+
+
+<div id="modal" class="modal hidden">
+<div class="modal-content">
+<h2>Add Song</h2>
+<form id="addSongForm">
+<input id="songTitle" class="input" placeholder="Song title" required />
+<input id="songArtist" class="input" placeholder="Artist" required />
+<select id="songMood" class="input">
+<option value="">-- Select Mood --</option>
+<option value="Calm">Calm</option>
+<option value="Energetic">Energetic</option>
+<option value="Focus">Focus</option>
+<option value="Romantic">Romantic</option>
+<option value="Party">Party</option>
+</select>
+<input id="coverUrl" class="input" placeholder="Cover image URL (optional)" />
+<div class="row">
+<button class="btn primary" type="submit">Add</button>
+<button class="btn" id="closeModal" type="button">Cancel</button>
+</div>
+<p id="formMsg" class="muted"></p>
+</form>
+</div>
+</div>
+
+
+<p id="formMsg" class="muted"></p>
+</form>
+</div>
+</div>
+</main>
+
+<script src="add.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

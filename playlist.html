@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Moodsound — Playlist</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+<div class="nav-brand">
+<span class="logo">🎵</span>
+<span class="brand-name">Moodsound</span>
+</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="playlist.html" class="active">Playlist</a>
+<a href="add.html">Add Song</a>
+<a href="recommended.html">Recommended</a>
+<a href="about.html">About</a>
+</div>
+<div class="nav-actions">
+<button id="themeToggle" class="theme-toggle" title="Toggle theme">
+<div class="theme-toggle-slider">
+<span class="theme-toggle-icon">🌙</span>
+</div>
+</button>
+</div>
+</nav>
+
+<main class="main-content">
+<header class="page-header">
+<h1 class="page-title">My Playlist</h1>
+<p class="page-subtitle">Manage and organize your favorite tracks</p>
+</header>
+
+<div class="container">
+<div class="tools-section">
+<div class="search-wrapper">
+<input id="search" class="input search-input" placeholder="Search songs, artists, or moods..." />
+</div>
+<div class="controls-group">
+<div class="mood-filters">
+<div id="moodChips" class="mood-chips"></div>
+</div>
+<div class="timer-controls">
+<input id="timerInput" class="input input-small" placeholder="Auto-play (s)" type="number" />
+<button class="btn btn-secondary" id="startTimer">Start Timer</button>
+</div>
+</div>
+</div>
+
+<div class="content-grid">
+<div class="playlist-section">
+<div id="playlist" class="playlist-page-grid"></div>
+</div>
+
+<aside class="sidebar">
+<div class="now-playing-card">
+<h3 class="card-title">Now Playing</h3>
+<div class="now">
+<div class="cover"></div>
+<div class="now-info">
+<div id="nowTitle" class="now-title">—</div>
+<div id="nowArtist" class="muted small">—</div>
+</div>
+</div>
+<p id="timerLabel" class="muted small">Timer: not running</p>
+</div>
+</aside>
+</div>
+</div>
+</main>
+
+
+<script src="data-loader.js"></script>
+<script src="playlist.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
