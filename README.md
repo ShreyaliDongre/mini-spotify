@@ -112,5 +112,8 @@ Developed by **Shreyali Dongre**
 For the **JavaScript Programming Lab Mini Project**  
 (Practicals 1–11 fully implemented)
 
+# CHANGES
+Some changes are being made in this repo:
+
 ---
 
